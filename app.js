@@ -8,7 +8,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const port = 3000;
+const port = 4000;
 
 // Habilitar CORS para todas las peticiones
 app.use(cors());
@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Servidor escuchando en http://localhost:${port}`);
+  console.log(`Servidor escuchando en puerto: ${port}`);
 });
 
 
