@@ -4,11 +4,14 @@ const db = require("./mysqlconfig");
 const cors = require('cors');
 const app = express();
 
+const { PORT } = require('./config.js');
+
+
 // Usa body-parser para procesar JSON en el cuerpo de las solicitudes
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const port = 4000;
+const port = PORT;
 
 // Habilitar CORS para todas las peticiones
 app.use(cors());
