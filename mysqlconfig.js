@@ -1,11 +1,5 @@
 const mysql = require('mysql');
-import {
-    DB_HOST,
-    DB_NAME,
-    DB_PASSWORD,
-    DB_USER,
-    DB_PORT
-} from './config.js'
+const { DB_HOST, DB_NAME, DB_PASSWORD, DB_USER, DB_PORT } = require('./config.js');
 //Conexion a la base de datos MySQL
 
 const db = mysql.createConnection({
